@@ -1,0 +1,36 @@
+{
+  "status": "failed",
+  "profile": "comprehensive",
+  "started_utc": "2026-06-21T17:51:25.074001+00:00",
+  "ended_utc": "2026-06-21T19:11:44.331615+00:00",
+  "duration_seconds": 4819.26,
+  "strict_dataset_expected": "deerfieldgreen/stk-sec-filings",
+  "preflight": {
+    "hf_access": {
+      "token_env": "HF_TOKEN",
+      "dataset_repo": "deerfieldgreen/stk-sec-filings",
+      "private": false,
+      "sha": "595fb497594e4829976fc99c386b7b0dc06e81aa"
+    },
+    "ollama": {
+      "required": [
+        "qwen3-embedding:4b",
+        "granite4.1:8b",
+        "glm-ocr:latest",
+        "qwen3.5:4b"
+      ],
+      "available_count": 16
+    },
+    "adapter": {
+      "cuda": "cuda available: NVIDIA GeForce RTX 4060 Laptop GPU",
+      "deps": [
+        "unsloth",
+        "peft",
+        "trl"
+      ]
+    }
+  },
+  "stages": [],
+  "post_checks": {},
+  "failure_message": "Stage 'core_pipeline' failed with exit code 1"
+}

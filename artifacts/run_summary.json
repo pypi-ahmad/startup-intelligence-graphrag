@@ -1,0 +1,839 @@
+{
+  "mode": "execute_real",
+  "timestamp_utc": "2026-06-21T05:16:55.109855+00:00",
+  "started_utc": "2026-06-21T04:58:40.867511+00:00",
+  "duration_seconds": 1094.24,
+  "dataset_repo": "deerfieldgreen/stk-sec-filings",
+  "n_filings": 6,
+  "n_chunks": 1193,
+  "n_eval_queries": 1,
+  "n_graph_nodes": 178,
+  "n_graph_edges": 602,
+  "n_multimodal_units": 0,
+  "n_ocr_units": 2,
+  "n_vision_units": 2,
+  "settings": {
+    "dataset_repo": "llama-duo/sec-filings",
+    "dataset_config": null,
+    "dataset_splits": [
+      "train"
+    ],
+    "default_n_companies": 30,
+    "embed_model": "qwen3-embedding:4b",
+    "generator_model": "granite4.1:8b",
+    "judge_model": "granite4.1:8b",
+    "ollama_timeout_seconds": 180,
+    "extension_judge_model": "granite4.1:8b",
+    "ocr_model": "glm-ocr:latest",
+    "vision_model": "qwen3.5:4b",
+    "adapter_base_model": "unsloth/granite-4.1-3b",
+    "adapter_enable": false,
+    "adapter_use_4bit": true,
+    "adapter_max_seq_length": 2048,
+    "adapter_max_train_examples": 4000,
+    "adapter_max_eval_examples": 400,
+    "adapter_lora_r": 16,
+    "adapter_lora_alpha": 32,
+    "adapter_lora_dropout": 0.05,
+    "adapter_learning_rate": 0.0002,
+    "chunk_size_tokens": 300,
+    "chunk_overlap_tokens": 40,
+    "default_top_k": 6,
+    "placeholder_mode": true,
+    "project_root": "/home/ahmad/AI/startup-intelligence-graphrag"
+  },
+  "schema_snapshot": {
+    "dataset_repo": "deerfieldgreen/stk-sec-filings",
+    "strict_dataset": false,
+    "n_filings": 8,
+    "tickers": [
+      "ADBE",
+      "AMD",
+      "AMZN",
+      "CHTR",
+      "ES",
+      "MSFT",
+      "SBUX",
+      "TSLA"
+    ],
+    "schema_snapshot": {
+      "dataset_repo": "deerfieldgreen/stk-sec-filings",
+      "n_rows": 593,
+      "columns": [
+        "acceptedDate",
+        "cik",
+        "fillingDate",
+        "finalLink",
+        "link",
+        "symbol",
+        "text",
+        "type"
+      ],
+      "n_valid_10k_filings": 483,
+      "n_sampled_filings": 8
+    }
+  },
+  "techniques": [
+    {
+      "name": "vector_baseline",
+      "elapsed_seconds": 1.26,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "f1_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 39,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "retrieved_ids": [
+              "AMZN_10-K_2024_2a00ccda__Financial Statements and Supplementary Data__0036",
+              "MSFT_10-K_2024_299dd207__Financial Statements and Supplementary Data__0020",
+              "ES_10-K_2024_d35fd6f0__Selected Financial Data__0001"
+            ],
+            "relevant_ids": [
+              "ES_10-K_2024_d35fd6f0__Business__0000",
+              "ES_10-K_2024_d35fd6f0__Business__0001",
+              "ES_10-K_2024_d35fd6f0__Business__0002",
+              "ES_10-K_2024_d35fd6f0__Business__0003",
+              "ES_10-K_2024_d35fd6f0__Business__0004",
+              "ES_10-K_2024_d35fd6f0__Business__0005",
+              "ES_10-K_2024_d35fd6f0__Business__0006",
+              "ES_10-K_2024_d35fd6f0__Business__0007",
+              "ES_10-K_2024_d35fd6f0__Business__0008",
+              "ES_10-K_2024_d35fd6f0__Business__0009",
+              "ES_10-K_2024_d35fd6f0__Business__0010",
+              "ES_10-K_2024_d35fd6f0__Business__0011",
+              "ES_10-K_2024_d35fd6f0__Business__0012",
+              "ES_10-K_2024_d35fd6f0__Business__0013",
+              "ES_10-K_2024_d35fd6f0__Business__0014",
+              "ES_10-K_2024_d35fd6f0__Business__0015",
+              "ES_10-K_2024_d35fd6f0__Business__0016",
+              "ES_10-K_2024_d35fd6f0__Business__0017",
+              "ES_10-K_2024_d35fd6f0__Business__0019",
+              "ES_10-K_2024_d35fd6f0__Business__0020",
+              "ES_10-K_2024_d35fd6f0__Business__0021",
+              "ES_10-K_2024_d35fd6f0__Business__0022",
+              "ES_10-K_2024_d35fd6f0__Business__0023",
+              "ES_10-K_2024_d35fd6f0__Business__0024",
+              "ES_10-K_2024_d35fd6f0__Business__0025",
+              "ES_10-K_2024_d35fd6f0__Business__0026",
+              "ES_10-K_2024_d35fd6f0__Business__0027",
+              "ES_10-K_2024_d35fd6f0__Business__0028",
+              "ES_10-K_2024_d35fd6f0__Business__0029",
+              "ES_10-K_2024_d35fd6f0__Business__0030",
+              "ES_10-K_2024_d35fd6f0__Business__0031",
+              "ES_10-K_2024_d35fd6f0__Business__0032",
+              "ES_10-K_2024_d35fd6f0__Business__0033",
+              "ES_10-K_2024_d35fd6f0__Business__0034",
+              "ES_10-K_2024_d35fd6f0__Business__0035",
+              "ES_10-K_2024_d35fd6f0__Business__0036",
+              "ES_10-K_2024_d35fd6f0__Business__0037",
+              "ES_10-K_2024_d35fd6f0__Business__0038",
+              "ES_10-K_2024_d35fd6f0__Business__0039"
+            ]
+          }
+        ]
+      },
+      "generation_metrics": {},
+      "rag_metrics": {}
+    },
+    {
+      "name": "graphrag_local",
+      "elapsed_seconds": 1.22,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.3333,
+        "recall_at_k": 0.0256,
+        "f1_at_k": 0.0476,
+        "mrr": 1.0,
+        "ndcg_at_k": 0.4693,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 39,
+            "precision": 0.3333333333333333,
+            "recall": 0.02564102564102564,
+            "f1": 0.047619047619047616,
+            "mrr": 1.0,
+            "ndcg": 0.46927872602275644,
+            "retrieved_ids": [
+              "ES_10-K_2024_d35fd6f0__Business__0001",
+              "AMZN_10-K_2024_2a00ccda__Risk Factors__0031",
+              "AMZN_10-K_2024_2a00ccda__Financial Statements and Supplementary Data__0036"
+            ],
+            "relevant_ids": [
+              "ES_10-K_2024_d35fd6f0__Business__0000",
+              "ES_10-K_2024_d35fd6f0__Business__0001",
+              "ES_10-K_2024_d35fd6f0__Business__0002",
+              "ES_10-K_2024_d35fd6f0__Business__0003",
+              "ES_10-K_2024_d35fd6f0__Business__0004",
+              "ES_10-K_2024_d35fd6f0__Business__0005",
+              "ES_10-K_2024_d35fd6f0__Business__0006",
+              "ES_10-K_2024_d35fd6f0__Business__0007",
+              "ES_10-K_2024_d35fd6f0__Business__0008",
+              "ES_10-K_2024_d35fd6f0__Business__0009",
+              "ES_10-K_2024_d35fd6f0__Business__0010",
+              "ES_10-K_2024_d35fd6f0__Business__0011",
+              "ES_10-K_2024_d35fd6f0__Business__0012",
+              "ES_10-K_2024_d35fd6f0__Business__0013",
+              "ES_10-K_2024_d35fd6f0__Business__0014",
+              "ES_10-K_2024_d35fd6f0__Business__0015",
+              "ES_10-K_2024_d35fd6f0__Business__0016",
+              "ES_10-K_2024_d35fd6f0__Business__0017",
+              "ES_10-K_2024_d35fd6f0__Business__0019",
+              "ES_10-K_2024_d35fd6f0__Business__0020",
+              "ES_10-K_2024_d35fd6f0__Business__0021",
+              "ES_10-K_2024_d35fd6f0__Business__0022",
+              "ES_10-K_2024_d35fd6f0__Business__0023",
+              "ES_10-K_2024_d35fd6f0__Business__0024",
+              "ES_10-K_2024_d35fd6f0__Business__0025",
+              "ES_10-K_2024_d35fd6f0__Business__0026",
+              "ES_10-K_2024_d35fd6f0__Business__0027",
+              "ES_10-K_2024_d35fd6f0__Business__0028",
+              "ES_10-K_2024_d35fd6f0__Business__0029",
+              "ES_10-K_2024_d35fd6f0__Business__0030",
+              "ES_10-K_2024_d35fd6f0__Business__0031",
+              "ES_10-K_2024_d35fd6f0__Business__0032",
+              "ES_10-K_2024_d35fd6f0__Business__0033",
+              "ES_10-K_2024_d35fd6f0__Business__0034",
+              "ES_10-K_2024_d35fd6f0__Business__0035",
+              "ES_10-K_2024_d35fd6f0__Business__0036",
+              "ES_10-K_2024_d35fd6f0__Business__0037",
+              "ES_10-K_2024_d35fd6f0__Business__0038",
+              "ES_10-K_2024_d35fd6f0__Business__0039"
+            ]
+          }
+        ]
+      },
+      "generation_metrics": {},
+      "rag_metrics": {}
+    },
+    {
+      "name": "graphrag_global",
+      "elapsed_seconds": 1.23,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "f1_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 39,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "retrieved_ids": [
+              "MSFT_10-K_2024_299dd207__Business__0000",
+              "MSFT_10-K_2024_299dd207__Business__0001",
+              "MSFT_10-K_2024_299dd207__Business__0002"
+            ],
+            "relevant_ids": [
+              "ES_10-K_2024_d35fd6f0__Business__0000",
+              "ES_10-K_2024_d35fd6f0__Business__0001",
+              "ES_10-K_2024_d35fd6f0__Business__0002",
+              "ES_10-K_2024_d35fd6f0__Business__0003",
+              "ES_10-K_2024_d35fd6f0__Business__0004",
+              "ES_10-K_2024_d35fd6f0__Business__0005",
+              "ES_10-K_2024_d35fd6f0__Business__0006",
+              "ES_10-K_2024_d35fd6f0__Business__0007",
+              "ES_10-K_2024_d35fd6f0__Business__0008",
+              "ES_10-K_2024_d35fd6f0__Business__0009",
+              "ES_10-K_2024_d35fd6f0__Business__0010",
+              "ES_10-K_2024_d35fd6f0__Business__0011",
+              "ES_10-K_2024_d35fd6f0__Business__0012",
+              "ES_10-K_2024_d35fd6f0__Business__0013",
+              "ES_10-K_2024_d35fd6f0__Business__0014",
+              "ES_10-K_2024_d35fd6f0__Business__0015",
+              "ES_10-K_2024_d35fd6f0__Business__0016",
+              "ES_10-K_2024_d35fd6f0__Business__0017",
+              "ES_10-K_2024_d35fd6f0__Business__0019",
+              "ES_10-K_2024_d35fd6f0__Business__0020",
+              "ES_10-K_2024_d35fd6f0__Business__0021",
+              "ES_10-K_2024_d35fd6f0__Business__0022",
+              "ES_10-K_2024_d35fd6f0__Business__0023",
+              "ES_10-K_2024_d35fd6f0__Business__0024",
+              "ES_10-K_2024_d35fd6f0__Business__0025",
+              "ES_10-K_2024_d35fd6f0__Business__0026",
+              "ES_10-K_2024_d35fd6f0__Business__0027",
+              "ES_10-K_2024_d35fd6f0__Business__0028",
+              "ES_10-K_2024_d35fd6f0__Business__0029",
+              "ES_10-K_2024_d35fd6f0__Business__0030",
+              "ES_10-K_2024_d35fd6f0__Business__0031",
+              "ES_10-K_2024_d35fd6f0__Business__0032",
+              "ES_10-K_2024_d35fd6f0__Business__0033",
+              "ES_10-K_2024_d35fd6f0__Business__0034",
+              "ES_10-K_2024_d35fd6f0__Business__0035",
+              "ES_10-K_2024_d35fd6f0__Business__0036",
+              "ES_10-K_2024_d35fd6f0__Business__0037",
+              "ES_10-K_2024_d35fd6f0__Business__0038",
+              "ES_10-K_2024_d35fd6f0__Business__0039"
+            ]
+          }
+        ]
+      },
+      "generation_metrics": {},
+      "rag_metrics": {}
+    },
+    {
+      "name": "graphrag_hybrid",
+      "elapsed_seconds": 15.15,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.3333,
+        "recall_at_k": 0.0256,
+        "f1_at_k": 0.0476,
+        "mrr": 0.3333,
+        "ndcg_at_k": 0.2346,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 39,
+            "precision": 0.3333333333333333,
+            "recall": 0.02564102564102564,
+            "f1": 0.047619047619047616,
+            "mrr": 0.3333333333333333,
+            "ndcg": 0.23463936301137822,
+            "retrieved_ids": [
+              "MSFT_10-K_2024_299dd207__Business__0001",
+              "MSFT_10-K_2024_299dd207__Business__0005",
+              "ES_10-K_2024_d35fd6f0__Business__0001"
+            ],
+            "relevant_ids": [
+              "ES_10-K_2024_d35fd6f0__Business__0000",
+              "ES_10-K_2024_d35fd6f0__Business__0001",
+              "ES_10-K_2024_d35fd6f0__Business__0002",
+              "ES_10-K_2024_d35fd6f0__Business__0003",
+              "ES_10-K_2024_d35fd6f0__Business__0004",
+              "ES_10-K_2024_d35fd6f0__Business__0005",
+              "ES_10-K_2024_d35fd6f0__Business__0006",
+              "ES_10-K_2024_d35fd6f0__Business__0007",
+              "ES_10-K_2024_d35fd6f0__Business__0008",
+              "ES_10-K_2024_d35fd6f0__Business__0009",
+              "ES_10-K_2024_d35fd6f0__Business__0010",
+              "ES_10-K_2024_d35fd6f0__Business__0011",
+              "ES_10-K_2024_d35fd6f0__Business__0012",
+              "ES_10-K_2024_d35fd6f0__Business__0013",
+              "ES_10-K_2024_d35fd6f0__Business__0014",
+              "ES_10-K_2024_d35fd6f0__Business__0015",
+              "ES_10-K_2024_d35fd6f0__Business__0016",
+              "ES_10-K_2024_d35fd6f0__Business__0017",
+              "ES_10-K_2024_d35fd6f0__Business__0019",
+              "ES_10-K_2024_d35fd6f0__Business__0020",
+              "ES_10-K_2024_d35fd6f0__Business__0021",
+              "ES_10-K_2024_d35fd6f0__Business__0022",
+              "ES_10-K_2024_d35fd6f0__Business__0023",
+              "ES_10-K_2024_d35fd6f0__Business__0024",
+              "ES_10-K_2024_d35fd6f0__Business__0025",
+              "ES_10-K_2024_d35fd6f0__Business__0026",
+              "ES_10-K_2024_d35fd6f0__Business__0027",
+              "ES_10-K_2024_d35fd6f0__Business__0028",
+              "ES_10-K_2024_d35fd6f0__Business__0029",
+              "ES_10-K_2024_d35fd6f0__Business__0030",
+              "ES_10-K_2024_d35fd6f0__Business__0031",
+              "ES_10-K_2024_d35fd6f0__Business__0032",
+              "ES_10-K_2024_d35fd6f0__Business__0033",
+              "ES_10-K_2024_d35fd6f0__Business__0034",
+              "ES_10-K_2024_d35fd6f0__Business__0035",
+              "ES_10-K_2024_d35fd6f0__Business__0036",
+              "ES_10-K_2024_d35fd6f0__Business__0037",
+              "ES_10-K_2024_d35fd6f0__Business__0038",
+              "ES_10-K_2024_d35fd6f0__Business__0039"
+            ]
+          }
+        ]
+      },
+      "generation_metrics": {
+        "n_queries": 1,
+        "em": 0.0,
+        "bleu": 0.0136,
+        "rouge_l": 0.1053,
+        "meteor": 0.1303,
+        "bert_score_f1": -0.0076
+      },
+      "rag_metrics": {
+        "model": "granite4.1:8b",
+        "n_queries": 1,
+        "faithfulness": 0.95,
+        "context_precision": 0.85,
+        "context_recall": 0.9,
+        "answer_relevancy": 0.92,
+        "rows": [
+          {
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "answer": "The core business activities and strategic focus areas of ES (Eversource Energy) are outlined in the provided SEC filing excerpt [3]. ES operates through four primary reportable segments: electric distribution, electric transmission, natural gas distribution, and water distribution, which together account for substantially all of Eversource's total consolidated revenues. Additionally, ES has an offshore wind business, indicating a strategic focus on renewable energy development, with 50 percent ownership interests in three offshore wind projects.\n\nCitations:\n[3] \"Eversource has four reportable segments: electric distribution, electric transmission, natural gas distribution and water distribution. These segments represent substantially all of Eversource's total consolidated revenues. Eversource has an offshore wind business, which includes 50 percent ownership interests in three offshore wind projects...\"",
+            "faithfulness": 0.95,
+            "context_precision": 0.85,
+            "context_recall": 0.9,
+            "answer_relevancy": 0.92,
+            "rationale": "The answer accurately summarizes the core business activities (electric distribution, electric transmission, natural gas distribution, water distribution) and strategic focus (offshore wind projects) of Eversource Energy as described in the retrieved context [3]. The information is directly supported by the provided excerpt, ensuring high faithfulness and relevancy. However, some peripheral details from other contexts are irrelevant, slightly lowering precision.",
+            "model": "granite4.1:8b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "hybrid_sparse_dense",
+      "elapsed_seconds": 4.38,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "f1_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 39,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "retrieved_ids": [
+              "ADBE_10-K_2024_68e02aac__Risk Factors__0001",
+              "CHTR_10-K_2024_6c6b96a0__Business__0024",
+              "CHTR_10-K_2024_6c6b96a0__Business__0025"
+            ],
+            "relevant_ids": [
+              "ES_10-K_2024_d35fd6f0__Business__0000",
+              "ES_10-K_2024_d35fd6f0__Business__0001",
+              "ES_10-K_2024_d35fd6f0__Business__0002",
+              "ES_10-K_2024_d35fd6f0__Business__0003",
+              "ES_10-K_2024_d35fd6f0__Business__0004",
+              "ES_10-K_2024_d35fd6f0__Business__0005",
+              "ES_10-K_2024_d35fd6f0__Business__0006",
+              "ES_10-K_2024_d35fd6f0__Business__0007",
+              "ES_10-K_2024_d35fd6f0__Business__0008",
+              "ES_10-K_2024_d35fd6f0__Business__0009",
+              "ES_10-K_2024_d35fd6f0__Business__0010",
+              "ES_10-K_2024_d35fd6f0__Business__0011",
+              "ES_10-K_2024_d35fd6f0__Business__0012",
+              "ES_10-K_2024_d35fd6f0__Business__0013",
+              "ES_10-K_2024_d35fd6f0__Business__0014",
+              "ES_10-K_2024_d35fd6f0__Business__0015",
+              "ES_10-K_2024_d35fd6f0__Business__0016",
+              "ES_10-K_2024_d35fd6f0__Business__0017",
+              "ES_10-K_2024_d35fd6f0__Business__0019",
+              "ES_10-K_2024_d35fd6f0__Business__0020",
+              "ES_10-K_2024_d35fd6f0__Business__0021",
+              "ES_10-K_2024_d35fd6f0__Business__0022",
+              "ES_10-K_2024_d35fd6f0__Business__0023",
+              "ES_10-K_2024_d35fd6f0__Business__0024",
+              "ES_10-K_2024_d35fd6f0__Business__0025",
+              "ES_10-K_2024_d35fd6f0__Business__0026",
+              "ES_10-K_2024_d35fd6f0__Business__0027",
+              "ES_10-K_2024_d35fd6f0__Business__0028",
+              "ES_10-K_2024_d35fd6f0__Business__0029",
+              "ES_10-K_2024_d35fd6f0__Business__0030",
+              "ES_10-K_2024_d35fd6f0__Business__0031",
+              "ES_10-K_2024_d35fd6f0__Business__0032",
+              "ES_10-K_2024_d35fd6f0__Business__0033",
+              "ES_10-K_2024_d35fd6f0__Business__0034",
+              "ES_10-K_2024_d35fd6f0__Business__0035",
+              "ES_10-K_2024_d35fd6f0__Business__0036",
+              "ES_10-K_2024_d35fd6f0__Business__0037",
+              "ES_10-K_2024_d35fd6f0__Business__0038",
+              "ES_10-K_2024_d35fd6f0__Business__0039"
+            ]
+          }
+        ]
+      },
+      "generation_metrics": {
+        "n_queries": 1,
+        "em": 0.0,
+        "bleu": 0.0118,
+        "rouge_l": 0.1,
+        "meteor": 0.088,
+        "bert_score_f1": 0.0446
+      },
+      "rag_metrics": {
+        "model": "granite4.1:8b",
+        "n_queries": 1,
+        "faithfulness": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "answer_relevancy": 0.0,
+        "rows": [
+          {
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "answer": "The provided SEC filings are from Adobe (ADBE) and Charter Communications (CHTR), not from ES (ES). Therefore, there is insufficient information to determine the core business activities and strategic focus areas of ES based on the excerpts given.\n\nInformation is insufficient in provided excerpts [1], [2], [3]. No excerpt references ES.",
+            "faithfulness": 0.0,
+            "context_precision": 0.0,
+            "context_recall": 0.0,
+            "answer_relevancy": 0.0,
+            "rationale": "The retrieved contexts are from Adobe (ADBE) and Charter Communications (CHTR), which do not contain any information about ES (ES). Consequently, none of the metrics can be satisfied.",
+            "model": "granite4.1:8b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "agentic_crag",
+      "elapsed_seconds": 68.39,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.3333,
+        "recall_at_k": 0.0256,
+        "f1_at_k": 0.0476,
+        "mrr": 0.5,
+        "ndcg_at_k": 0.2961,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 39,
+            "precision": 0.3333333333333333,
+            "recall": 0.02564102564102564,
+            "f1": 0.047619047619047616,
+            "mrr": 0.5,
+            "ndcg": 0.2960819109658652,
+            "retrieved_ids": [
+              "ES_10-K_2024_d35fd6f0__Selected Financial Data__0001",
+              "ES_10-K_2024_d35fd6f0__Business__0001"
+            ],
+            "relevant_ids": [
+              "ES_10-K_2024_d35fd6f0__Business__0000",
+              "ES_10-K_2024_d35fd6f0__Business__0001",
+              "ES_10-K_2024_d35fd6f0__Business__0002",
+              "ES_10-K_2024_d35fd6f0__Business__0003",
+              "ES_10-K_2024_d35fd6f0__Business__0004",
+              "ES_10-K_2024_d35fd6f0__Business__0005",
+              "ES_10-K_2024_d35fd6f0__Business__0006",
+              "ES_10-K_2024_d35fd6f0__Business__0007",
+              "ES_10-K_2024_d35fd6f0__Business__0008",
+              "ES_10-K_2024_d35fd6f0__Business__0009",
+              "ES_10-K_2024_d35fd6f0__Business__0010",
+              "ES_10-K_2024_d35fd6f0__Business__0011",
+              "ES_10-K_2024_d35fd6f0__Business__0012",
+              "ES_10-K_2024_d35fd6f0__Business__0013",
+              "ES_10-K_2024_d35fd6f0__Business__0014",
+              "ES_10-K_2024_d35fd6f0__Business__0015",
+              "ES_10-K_2024_d35fd6f0__Business__0016",
+              "ES_10-K_2024_d35fd6f0__Business__0017",
+              "ES_10-K_2024_d35fd6f0__Business__0019",
+              "ES_10-K_2024_d35fd6f0__Business__0020",
+              "ES_10-K_2024_d35fd6f0__Business__0021",
+              "ES_10-K_2024_d35fd6f0__Business__0022",
+              "ES_10-K_2024_d35fd6f0__Business__0023",
+              "ES_10-K_2024_d35fd6f0__Business__0024",
+              "ES_10-K_2024_d35fd6f0__Business__0025",
+              "ES_10-K_2024_d35fd6f0__Business__0026",
+              "ES_10-K_2024_d35fd6f0__Business__0027",
+              "ES_10-K_2024_d35fd6f0__Business__0028",
+              "ES_10-K_2024_d35fd6f0__Business__0029",
+              "ES_10-K_2024_d35fd6f0__Business__0030",
+              "ES_10-K_2024_d35fd6f0__Business__0031",
+              "ES_10-K_2024_d35fd6f0__Business__0032",
+              "ES_10-K_2024_d35fd6f0__Business__0033",
+              "ES_10-K_2024_d35fd6f0__Business__0034",
+              "ES_10-K_2024_d35fd6f0__Business__0035",
+              "ES_10-K_2024_d35fd6f0__Business__0036",
+              "ES_10-K_2024_d35fd6f0__Business__0037",
+              "ES_10-K_2024_d35fd6f0__Business__0038",
+              "ES_10-K_2024_d35fd6f0__Business__0039"
+            ]
+          }
+        ]
+      },
+      "generation_metrics": {
+        "n_queries": 1,
+        "em": 0.0,
+        "bleu": 0.0087,
+        "rouge_l": 0.1207,
+        "meteor": 0.1642,
+        "bert_score_f1": 0.0312
+      },
+      "rag_metrics": {
+        "model": "granite4.1:8b",
+        "n_queries": 1,
+        "faithfulness": 0.95,
+        "context_precision": 1.0,
+        "context_recall": 0.9,
+        "answer_relevancy": 1.0,
+        "rows": [
+          {
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "answer": "The core business activities and strategic focus areas of ES (Eversource Energy) are as follows:\n\n1. **Electric Distribution**: One of Eversource's reportable segments, handling the distribution of electricity within its service territories.\n   [2]\n\n2. **Electric Transmission**: Another reportable segment, responsible for the transmission of electricity across regions served by Eversource.\n   [2]\n\n3. **Natural Gas Distribution**: A fourth reportable segment, managing the distribution of natural gas to customers in its service areas.\n   [2]\n\n4. **Water Distribution**: The final reportable segment, overseeing the distribution of water services within Eversource's operational regions.\n   [2]\n\n5. **Offshore Wind Business**: ES has a strategic focus on offshore wind energy, holding 50 percent ownership interests in three offshore wind projects.\n   [2]\n\nThese activities collectively represent substantially all of Eversource's total consolidated revenues and highlight its diversified utility services along with an emerging renewable energy focus.\n[1], [2]",
+            "faithfulness": 0.95,
+            "context_precision": 1.0,
+            "context_recall": 0.9,
+            "answer_relevancy": 1.0,
+            "rationale": "The answer accurately lists the core business activities (electric distribution, electric transmission, natural gas distribution, water distribution) and strategic focus area (offshore wind business) of ES (Eversource Energy), directly addressing the question. All information is well-supported by the provided context, which details Eversource's reportable segments and offshore wind investments.",
+            "model": "granite4.1:8b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "multimodal_rag",
+      "elapsed_seconds": 1.65,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "f1_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "retrieved_ids": [],
+            "relevant_ids": []
+          }
+        ]
+      },
+      "generation_metrics": {
+        "n_queries": 1,
+        "em": 0.0,
+        "bleu": 0.0054,
+        "rouge_l": 0.0826,
+        "meteor": 0.0763,
+        "bert_score_f1": -0.0037
+      },
+      "rag_metrics": {
+        "model": "granite4.1:8b",
+        "n_queries": 1,
+        "faithfulness": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "answer_relevancy": 0.0,
+        "rows": [
+          {
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "answer": "Information is insufficient in the provided SEC filing excerpts to determine the core business activities and strategic focus areas of ES (ES). No relevant excerpt data is available for analysis. [Insufficient evidence]",
+            "faithfulness": 0.0,
+            "context_precision": 0.0,
+            "context_recall": 0.0,
+            "answer_relevancy": 0.0,
+            "rationale": "No retrieved context was provided, and the answer claims are unsupported by any evidence.",
+            "model": "granite4.1:8b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "multimodal_ocr_rag",
+      "elapsed_seconds": 73.92,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "f1_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "retrieved_ids": [
+              "ADBE_10-K_2024_68e02aac__ocr__000",
+              "AMD_10-K_2024_74dfc041__ocr__000"
+            ],
+            "relevant_ids": []
+          }
+        ]
+      },
+      "generation_metrics": {
+        "n_queries": 1,
+        "em": 0.0,
+        "bleu": 0.014,
+        "rouge_l": 0.1176,
+        "meteor": 0.1698,
+        "bert_score_f1": -0.0092
+      },
+      "rag_metrics": {
+        "model": "granite4.1:8b",
+        "n_queries": 1,
+        "faithfulness": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "answer_relevancy": 0.0,
+        "rows": [
+          {
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "answer": "Information is insufficient in the provided excerpts to determine the core business activities and strategic focus areas of ES (ES). The excerpts are from filings for ADBE and AMD, not ES, and do not contain any relevant information about ES's operations or strategy.\n\n[1] - excerpt pertains to Adobe (ADBE) brand management risks.\n[2] - excerpt pertains to AMD's cybersecurity risk management program. \n\nNo evidence related to ES is present in the excerpts [1] and [2]. Therefore, a factual answer regarding ES's core business activities and strategic focus areas cannot be provided based on the given data.",
+            "faithfulness": 0.0,
+            "context_precision": 0.0,
+            "context_recall": 0.0,
+            "answer_relevancy": 0.0,
+            "rationale": "The provided context excerpts are from filings for ADBE and AMD, which contain no information about ES (ES). Consequently, none of the metrics can be satisfied.",
+            "model": "granite4.1:8b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "multimodal_vision_rag",
+      "elapsed_seconds": 25.63,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "f1_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "retrieved_ids": [
+              "ADBE_10-K_2024_68e02aac__vision__000",
+              "AMD_10-K_2024_74dfc041__vision__000"
+            ],
+            "relevant_ids": []
+          }
+        ]
+      },
+      "generation_metrics": {
+        "n_queries": 1,
+        "em": 0.0,
+        "bleu": 0.0072,
+        "rouge_l": 0.1053,
+        "meteor": 0.0868,
+        "bert_score_f1": -0.0078
+      },
+      "rag_metrics": {
+        "model": "granite4.1:8b",
+        "n_queries": 1,
+        "faithfulness": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "answer_relevancy": 0.0,
+        "rows": [
+          {
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "answer": "Information is insufficient to determine the core business activities and strategic focus areas of ES (ES) based on the provided SEC filing excerpts. The excerpts discuss risks related to reputation management for Adobe (ADBE) and cybersecurity risk management strategies for AMD, but neither mentions ES or provides relevant details about its operations.\n\n[1], [2] - No mention of ES; only discuss ADBE and AMD.",
+            "faithfulness": 0.0,
+            "context_precision": 0.0,
+            "context_recall": 0.0,
+            "answer_relevancy": 0.0,
+            "rationale": "The provided context excerpts discuss risks for Adobe (ADBE) and cybersecurity strategies for AMD, but contain no information about ES (ES). Consequently, none of the metrics can be satisfied.",
+            "model": "granite4.1:8b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "multimodal_unified_v2",
+      "elapsed_seconds": 60.8,
+      "retrieval_metrics": {
+        "k": 3,
+        "n_queries": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "f1_at_k": 0.0,
+        "mrr": 0.0,
+        "ndcg_at_k": 0.0,
+        "query_level": [
+          {
+            "query_id": "q01_local_business_es",
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "k": 3,
+            "n_relevant": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "retrieved_ids": [
+              "ADBE_10-K_2024_68e02aac__ocr__000",
+              "ADBE_10-K_2024_68e02aac__vision__000",
+              "AMD_10-K_2024_74dfc041__ocr__000"
+            ],
+            "relevant_ids": []
+          }
+        ]
+      },
+      "generation_metrics": {
+        "n_queries": 1,
+        "em": 0.0,
+        "bleu": 0.0127,
+        "rouge_l": 0.0881,
+        "meteor": 0.1033,
+        "bert_score_f1": 0.0362
+      },
+      "rag_metrics": {
+        "model": "granite4.1:8b",
+        "n_queries": 1,
+        "faithfulness": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "answer_relevancy": 0.0,
+        "rows": [
+          {
+            "query": "What are the core business activities and strategic focus areas of ES (ES)?",
+            "answer": "Information is insufficient in the provided excerpts to determine the core business activities and strategic focus areas of ES (ES). The excerpts are from SEC filings for Adobe (ADBE) and AMD, discussing risks related to reputation management, brand maintenance, AI offerings, and cybersecurity risk management strategies, but none mention ES or its operations. [1], [2], [3] do not contain relevant information about ES's business activities or strategic focus areas.",
+            "faithfulness": 0.0,
+            "context_precision": 0.0,
+            "context_recall": 0.0,
+            "answer_relevancy": 0.0,
+            "rationale": "The provided context excerpts are from SEC filings for Adobe (ADBE) and AMD, discussing risks related to reputation management, brand maintenance, AI offerings, and cybersecurity risk management strategies. None of these excerpts mention ES or its core business activities and strategic focus areas. Therefore, the answer is not faithful, and the retrieved context is neither precise nor relevant to the question.",
+            "model": "granite4.1:8b"
+          }
+        ]
+      }
+    }
+  ],
+  "figures": [
+    "/home/ahmad/AI/startup-intelligence-graphrag/artifacts/figures/retrieval_ndcg_comparison.png",
+    "/home/ahmad/AI/startup-intelligence-graphrag/artifacts/figures/generation_rougel_comparison.png",
+    "/home/ahmad/AI/startup-intelligence-graphrag/artifacts/figures/judge_overall_comparison.png",
+    "/home/ahmad/AI/startup-intelligence-graphrag/artifacts/figures/graph_topology_snapshot.png"
+  ]
+}

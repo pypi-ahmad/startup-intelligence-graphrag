@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Generated execution artifacts
+artifacts/raw/
+artifacts/chunks/
+artifacts/embeddings/
+artifacts/graph/
+artifacts/retrievals/
+artifacts/generations/
+artifacts/eval/
+artifacts/figures/
+artifacts/_llm_cache/
+artifacts/_embed_cache/
+
+# Keep archived artifacts if desired
+# artifacts/archive/

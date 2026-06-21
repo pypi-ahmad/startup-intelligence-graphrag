@@ -1,0 +1,9 @@
+{
+  "mode": "placeholder",
+  "status": "not_executed",
+  "stage": "optional_domain_adapter_unsloth_peft_trl",
+  "notes": [
+    "Domain adapter stage is implemented but not executed.",
+    "All adapter training, generation, judge, rag, and latency outputs remain placeholders."
+  ]
+}

@@ -1,0 +1,65 @@
+[project]
+name = "startup-intelligence-graphrag"
+version = "0.1.0"
+description = "Startup/company intelligence GraphRAG over SEC filings with local Ollama models"
+readme = "README.md"
+requires-python = ">=3.12.10,<3.13"
+dependencies = [
+  "beautifulsoup4==4.12.3",
+  "bert-score==0.3.12",
+  "datasets==3.6.0",
+  "faiss-cpu==1.11.0",
+  "huggingface-hub>=0.34.0,<1.0",
+  "ipykernel==6.29.5",
+  "jupyter==1.1.1",
+  "langchain==0.3.25",
+  "langchain-community==0.3.23",
+  "langchain-ollama==0.3.3",
+  "langgraph==0.4.8",
+  "lxml==5.3.0",
+  "loguru==0.7.3",
+  "matplotlib==3.10.3",
+  "networkx==3.6.1",
+  "nltk==3.9.4",
+  "numpy==2.2.6",
+  "ollama==0.4.8",
+  "pandas==2.2.3",
+  "pydantic==2.11.5",
+  "pydantic-settings==2.8.1",
+  "python-dotenv==1.1.0",
+  "python-louvain==0.16",
+  "rank-bm25==0.2.2",
+  "rouge-score==0.1.2",
+  "sacrebleu==2.6.0",
+  "tiktoken==0.9.0",
+  "tqdm==4.67.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.5",
+  "pytest-cov==6.1.1",
+]
+adapter = [
+  "accelerate>=1.0.0",
+  "bitsandbytes==0.48.0",
+  "peft>=0.11.0",
+  "transformers==4.56.2",
+  "trl==0.22.2",
+  "unsloth",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-q"
+testpaths = ["tests"]
