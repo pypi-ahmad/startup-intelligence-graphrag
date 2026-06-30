@@ -1,0 +1,1101 @@
+{
+  "AMD_10-K_2020": {
+    "filing_id": "AMD_10-K_2020",
+    "ticker": "AMD",
+    "company_name": "ADVANCED MICRO DEVICES INC",
+    "entities": [
+      {
+        "name": "Advanced Micro Devices Inc.",
+        "type": "company",
+        "description": "The semiconductor company subject to the SEC 10-K filing."
+      },
+      {
+        "name": "AMD",
+        "type": "company",
+        "description": "Abbreviated name for Advanced Micro Devices Inc., used throughout the filing."
+      },
+      {
+        "name": "Xilinx, Inc.",
+        "type": "company",
+        "description": "Acquisition target expected to close by year-end 2021."
+      },
+      {
+        "name": "THATIC JVs",
+        "type": "segment",
+        "description": "Joint ventures with Higon Information Technology Co., Ltd. that develop products using licensed IP from AMD."
+      },
+      {
+        "name": "IP licensing agreement",
+        "type": "product",
+        "description": "Agreement governing royalty payments and expected revenue from THATIC JVs' product sales."
+      },
+      {
+        "name": "Risks related to future accounting rules",
+        "type": "risk",
+        "description": "Potential impact of upcoming accounting standards on AMD's financial statements."
+      },
+      {
+        "name": "Demand for AMD\u2019s products",
+        "type": "risk",
+        "description": "Uncertainty around market demand affecting product sales performance."
+      },
+      {
+        "name": "Competitive landscape of markets",
+        "type": "risk",
+        "description": "Risks arising from changes in competition within AMD's operating segments."
+      },
+      {
+        "name": "International sales",
+        "type": "segment",
+        "description": "Significant portion of AMD\u2019s revenue expected to come from international markets."
+      },
+      {
+        "name": "Revolving Credit Facility",
+        "type": "financial",
+        "description": "Credit facility providing liquidity to fund AMD's operations and capital expenditures."
+      },
+      {
+        "name": "Litigation liability",
+        "type": "risk",
+        "description": "Potential financial impact of ongoing legal proceedings on AMD\u2019s condition."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Advanced Micro Devices Inc.",
+        "target": "Xilinx, Inc.",
+        "type": "acquires",
+        "evidence": "the acquisition of Xilinx, Inc. is currently expected to close by the end of calendar year 2021."
+      },
+      {
+        "source": "AMD",
+        "target": "THATIC JVs",
+        "type": "supplies_to",
+        "evidence": "expected amounts to be received by AMD under the IP licensing agreement and AMD\u2019s expected royalty payments from future product sales of the two joint ventures AMD holds equity in with Higon Information Technology Co., Ltd."
+      }
+    ]
+  },
+  "ABT_10-K_2020": {
+    "filing_id": "ABT_10-K_2020",
+    "ticker": "ABT",
+    "company_name": "ABBOTT LABORATORIES",
+    "entities": [
+      {
+        "name": "Abbott Laboratories",
+        "type": "company",
+        "description": "The Illinois corporation founded in 1900 that discovers, develops, manufactures, and sells a broad line of health care products."
+      },
+      {
+        "name": "Established Pharmaceutical Products",
+        "type": "segment",
+        "description": "One of Abbott's four reportable segments focused on branded generic pharmaceuticals sold outside the United States."
+      },
+      {
+        "name": "Diagnostic Products",
+        "type": "segment",
+        "description": "Abbott's segment that manufactures, markets, and sells a broad line of diagnostic systems and tests worldwide."
+      },
+      {
+        "name": "Creon\u2122",
+        "type": "product",
+        "description": "A gastroenterology product for the treatment of pancreatic exocrine insufficiency associated with several underlying conditions."
+      },
+      {
+        "name": "Duphalac\u2122",
+        "type": "product",
+        "description": "A respiratory drug used for the regulation of the physiological rhythm of the colon."
+      },
+      {
+        "name": "Synthroid\u2122",
+        "type": "product",
+        "description": "A cardiovascular product for the treatment of hypothyroidism."
+      },
+      {
+        "name": "Competition in the Established Pharmaceutical Products segment",
+        "type": "risk",
+        "description": "Competitive pressures from other health care and pharmaceutical companies, as well as generic drug substitution."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Abbott Laboratories",
+        "target": "Established Pharmaceutical Products",
+        "type": "operates_in_segment",
+        "evidence": "Abbott has four reportable segments: Established Pharmaceutical Products..."
+      },
+      {
+        "source": "Abbott Laboratories",
+        "target": "Diagnostic Products",
+        "type": "operates_in_segment",
+        "evidence": "These products include a broad line of diagnostic systems and tests manufactured, marketed, and sold worldwide."
+      },
+      {
+        "source": "Established Pharmaceutical Products",
+        "target": "Competition in the Established Pharmaceutical Products segment",
+        "type": "faces_risk",
+        "evidence": "Competition in the Established Pharmaceutical Products segment is generally from other health care and pharmaceutical companies."
+      },
+      {
+        "source": "Established Pharmaceutical Products",
+        "target": "Creon\u2122",
+        "type": "produces",
+        "evidence": "The principal products included in the Established Pharmaceutical Products segment are: \u25cfgastroenterology products, including Creon\u2122..."
+      },
+      {
+        "source": "Established Pharmaceutical Products",
+        "target": "Duphalac\u2122",
+        "type": "produces",
+        "evidence": "\u25cfrespiratory drugs and vaccines, including the anti-infective clarithromycin (sold under the trademarks Biaxin\u2122, Klacid\u2122, and Klaricid\u2122); and Influvac\u2122, an influenza vaccine."
+      },
+      {
+        "source": "Established Pharmaceutical Products",
+        "target": "Synthroid\u2122",
+        "type": "produces",
+        "evidence": "\u25cfcardiovascular and metabolic products, including Lipanthyl\u2122 and TriCor\u2122, for the treatment of dyslipidemia; Teveten\u2122 and Teveten\u2122 Plus, for the treatment of essential hypertension, and Physiotens\u2122, for the treatment of hypertension; and Synthroid\u2122, for the treatment of hypothyroidism."
+      }
+    ]
+  },
+  "CECE_10-K_2020": {
+    "filing_id": "CECE_10-K_2020",
+    "ticker": "CECE",
+    "company_name": "CECO ENVIRONMENTAL CORP",
+    "entities": [
+      {
+        "name": "CECO Environmental Corp",
+        "type": "company",
+        "description": "The global leader in industrial air quality and fluid handling serving diverse markets through an asset-light business model."
+      },
+      {
+        "name": "power generation",
+        "type": "segment",
+        "description": "An industry served by CECO that focuses on generating electricity from various sources."
+      },
+      {
+        "name": "petrochemical processing",
+        "type": "segment",
+        "description": "A sector where CECO provides solutions to improve air quality and emissions control in chemical manufacturing processes."
+      },
+      {
+        "name": "general industrial",
+        "type": "segment",
+        "description": "Broad category of industries that benefit from CECO's engineered solutions for cleaner production environments."
+      },
+      {
+        "name": "refining",
+        "type": "segment",
+        "description": "The oil & gas refining industry, which relies on CECO's equipment to manage emissions and enhance operational efficiency."
+      },
+      {
+        "name": "oil & gas",
+        "type": "segment",
+        "description": "Energy sector served by CECO that requires advanced air quality control systems for extraction and processing operations."
+      },
+      {
+        "name": "electric vehicle production",
+        "type": "segment",
+        "description": "Automotive industry segment where CECO supports clean manufacturing processes for EVs."
+      },
+      {
+        "name": "poly silicon fabrication",
+        "type": "segment",
+        "description": "Specialized industrial process in the solar panel industry that benefits from CECO's filtration systems."
+      },
+      {
+        "name": "battery recycling",
+        "type": "segment",
+        "description": "Environmental sector where CECO provides solutions to manage emissions during battery material recovery."
+      },
+      {
+        "name": "wastewater treatment",
+        "type": "segment",
+        "description": "Water management industry served by CECO's fluid handling systems to improve environmental compliance."
+      },
+      {
+        "name": "$5 billion dollar global market",
+        "type": "financial",
+        "description": "The total addressable market size for industrial air quality and fluid handling solutions, as highlighted in the Industry Overview."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "CECO Environmental Corp",
+        "target": "power generation",
+        "type": "operates_in_segment",
+        "evidence": "We serve diverse industries globally by working to improve air quality... power generation."
+      },
+      {
+        "source": "CECO Environmental Corp",
+        "target": "petrochemical processing",
+        "type": "operates_in_segment",
+        "evidence": "... petrochemical processing, general industrial, refining, oil & gas..."
+      },
+      {
+        "source": "CECO Environmental Corp",
+        "target": "general industrial",
+        "type": "operates_in_segment",
+        "evidence": "... general industrial, refining, oil & gas, electric vehicle production..."
+      },
+      {
+        "source": "CECO Environmental Corp",
+        "target": "refining",
+        "type": "operates_in_segment",
+        "evidence": "... refining, oil & gas and wastewater treatment."
+      },
+      {
+        "source": "CECO Environmental Corp",
+        "target": "oil & gas",
+        "type": "operates_in_segment",
+        "evidence": "... oil & gas and wastewater treatment."
+      },
+      {
+        "source": "CECO Environmental Corp",
+        "target": "electric vehicle production",
+        "type": "operates_in_segment",
+        "evidence": "... electric vehicle producers in the world."
+      },
+      {
+        "source": "CECO Environmental Corp",
+        "target": "poly silicon fabrication",
+        "type": "operates_in_segment",
+        "evidence": "... poly silicon fabrication, battery recycling, and wastewater treatment..."
+      },
+      {
+        "source": "CECO Environmental Corp",
+        "target": "battery recycling",
+        "type": "operates_in_segment",
+        "evidence": "... battery recycling, and wastewater treatment."
+      },
+      {
+        "source": "CECO Environmental Corp",
+        "target": "$5 billion dollar global market",
+        "type": "faces_risk",
+        "evidence": "We believe demand for our products and services will continue to be driven by the following factors: Global Focus on Environment."
+      }
+    ]
+  },
+  "APD_10-K_2020": {
+    "filing_id": "APD_10-K_2020",
+    "ticker": "APD",
+    "company_name": "Air Products & Chemicals, Inc.",
+    "entities": [
+      {
+        "name": "Air Products & Chemicals, Inc.",
+        "type": "company",
+        "description": "A global provider of industrial gases, equipment, and services founded in 1940."
+      },
+      {
+        "name": "Hydrogen",
+        "type": "product",
+        "description": "A key process gas used by the company's customers in refining, mobility, and chemical production."
+      },
+      {
+        "name": "Helium",
+        "type": "product",
+        "description": "A specialty gas produced as a byproduct of natural gas extraction for industrial applications."
+      },
+      {
+        "name": "Industrial Gases - Americas",
+        "type": "segment",
+        "description": "Regional segment supplying gases and equipment to customers across the Americas."
+      },
+      {
+        "name": "Industrial Gases - EMEA",
+        "type": "segment",
+        "description": "Regional segment supplying gases and equipment to customers in Europe, Middle East, and Africa."
+      },
+      {
+        "name": "Industrial Gases - Asia",
+        "type": "segment",
+        "description": "Regional segment supplying gases and equipment to customers across Asia."
+      },
+      {
+        "name": "Industrial Gases - Global",
+        "type": "segment",
+        "description": "Aggregate segment reporting the global industrial gases operations."
+      },
+      {
+        "name": "Corporate and other",
+        "type": "segment",
+        "description": "Segment encompassing corporate-level activities and non-industrial gas operations."
+      },
+      {
+        "name": "Carbon Capture Projects",
+        "type": "product",
+        "description": "Projects developed by Air Products to capture carbon emissions for sustainability initiatives."
+      },
+      {
+        "name": "World-scale Carbon-Free Hydrogen Projects",
+        "type": "product",
+        "description": "Large-scale hydrogen production projects aimed at supporting global transportation and energy transition."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Air Products & Chemicals, Inc.",
+        "target": "Industrial Gases - Americas",
+        "type": "operates_in_segment",
+        "evidence": "Our Industrial Gases business is organized and operated regionally."
+      },
+      {
+        "source": "Air Products & Chemicals, Inc.",
+        "target": "Industrial Gases - EMEA",
+        "type": "operates_in_segment",
+        "evidence": "Our Industrial Gases business is organized and operated regionally."
+      },
+      {
+        "source": "Air Products & Chemicals, Inc.",
+        "target": "Industrial Gases - Asia",
+        "type": "operates_in_segment",
+        "evidence": "Our Industrial Gases business is organized and operated regionally."
+      },
+      {
+        "source": "Air Products & Chemicals, Inc.",
+        "target": "Industrial Gases - Global",
+        "type": "operates_in_segment",
+        "evidence": "During the fiscal year ended 30 September 2020, we reported our continuing operations in five reporting segments..."
+      },
+      {
+        "source": "Air Products & Chemicals, Inc.",
+        "target": "Corporate and other",
+        "type": "operates_in_segment",
+        "evidence": "During the fiscal year ended 30 September 2020, we reported our continuing operations in five reporting segments..."
+      }
+    ]
+  },
+  "BKTI_10-K_2020": {
+    "filing_id": "BKTI_10-K_2020",
+    "ticker": "BKTI",
+    "company_name": "BK Technologies Corp",
+    "entities": [
+      {
+        "name": "BK Technologies Corporation",
+        "type": "company",
+        "description": "The holding company that operates through its wholly owned subsidiary BK Technologies, Inc., providing two-way radio communications equipment."
+      },
+      {
+        "name": "BK Radio",
+        "type": "product",
+        "description": "Brand name under which BK Technologies offers high-specification two-way land mobile radios for government and public safety markets."
+      },
+      {
+        "name": "RELM",
+        "type": "product",
+        "description": "Brand name used by BK Technologies for basic yet feature-rich two-way communications products targeting commercial and industrial users."
+      },
+      {
+        "name": "APCO",
+        "type": "person",
+        "description": "Association of Public-Safety Communications Officials-International that represents public safety communications professionals."
+      },
+      {
+        "name": "NASTD",
+        "type": "person",
+        "description": "National Association of State Technology Directors that advises on technology adoption in state governments."
+      }
+    ],
+    "relationships": []
+  },
+  "ISTR_10-K_2020": {
+    "filing_id": "ISTR_10-K_2020",
+    "ticker": "ISTR",
+    "company_name": "Investar Holding Corp",
+    "entities": [
+      {
+        "name": "Investar Holding Corporation",
+        "type": "company",
+        "description": "The financial holding company headquartered in Baton Rouge, Louisiana, that operates primarily through its wholly-owned subsidiary, Investar Bank."
+      },
+      {
+        "name": "Investar Bank, National Association",
+        "type": "company",
+        "description": "The national bank chartered by the Office of the Comptroller of Currency and wholly-owned subsidiary of Investar Holding Corporation."
+      },
+      {
+        "name": "Cheaha Financial Group, Inc.",
+        "type": "company",
+        "description": "The Alabama-based financial institution targeted for acquisition by Investar Holding Corporation on January 25, 2021."
+      },
+      {
+        "name": "Calhoun County",
+        "type": "segment",
+        "description": "The geographic region in northeast Alabama where Cheaha Financial Group's four branches are located."
+      },
+      {
+        "name": "COVID-19 pandemic",
+        "type": "risk",
+        "description": "The public health crisis that has impacted the financial services industry and is discussed in Item 7 of the filing."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Investar Holding Corporation",
+        "target": "Investar Bank, National Association",
+        "type": "subsidiary_of",
+        "evidence": "is a wholly-owned subsidiary, Investar Bank, National Association (the \u201cBank\u201d)."
+      },
+      {
+        "source": "Investar Holding Corporation",
+        "target": "Cheaha Financial Group, Inc.",
+        "type": "acquires",
+        "evidence": "announced a definitive agreement to acquire Cheaha Financial Group, Inc., with four branches in Calhoun County in northeast Alabama."
+      },
+      {
+        "source": "Investar Bank, National Association",
+        "target": "Calhoun County",
+        "type": "operates_in_segment",
+        "evidence": "acquisition includes four branches in Calhoun County in northeast Alabama."
+      }
+    ]
+  },
+  "AIR_10-K_2020": {
+    "filing_id": "AIR_10-K_2020",
+    "ticker": "AIR",
+    "company_name": "AAR CORP",
+    "entities": [
+      {
+        "name": "AAR CORP",
+        "type": "company",
+        "description": "The parent company providing aviation and government services, founded in 1951."
+      },
+      {
+        "name": "Naval Air Systems Command",
+        "type": "company",
+        "description": "U.S. military contractor that awarded AAR a $118 million contract for C-40 aircraft support."
+      },
+      {
+        "name": "C-40 aircraft",
+        "type": "product",
+        "description": "Airbus transport aircraft used by the U.S. Marine Corps, supported by AAR's integrated services."
+      },
+      {
+        "name": "Aviation Services segment",
+        "type": "segment",
+        "description": "AAR's core business unit delivering parts supply, government programs, MRO, and engineering services."
+      },
+      {
+        "name": "COVID-19 pandemic",
+        "type": "risk",
+        "description": "Global health crisis that significantly impacted AAR's commercial aviation operations in fiscal 2020."
+      },
+      {
+        "name": "$166.4 million sales increase",
+        "type": "financial",
+        "description": "11.2% year-over-year growth in sales, primarily driven by the Aviation Services segment."
+      },
+      {
+        "name": "Contractor-Owned, Contractor-Operated (COCO) business",
+        "type": "product",
+        "description": "Capital-intensive business exited by AAR in fiscal 2020 through asset and contract sales."
+      },
+      {
+        "name": "Revolving Credit Facility",
+        "type": "financial",
+        "description": "Credit line used by AAR to draw additional borrowings as a precautionary measure during COVID-19."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "AAR CORP",
+        "target": "Naval Air Systems Command",
+        "type": "supplies_to",
+        "evidence": "We were awarded a new $118 million contract from the Naval Air Systems Command in support of the U.S. Marine Corps."
+      }
+    ]
+  },
+  "ACU_10-K_2020": {
+    "filing_id": "ACU_10-K_2020",
+    "ticker": "ACU",
+    "company_name": "ACME UNITED CORP",
+    "entities": [
+      {
+        "name": "Acme United Corporation",
+        "type": "company",
+        "description": "The parent company supplying first aid and safety solutions globally."
+      },
+      {
+        "name": "First Aid Central",
+        "type": "company",
+        "description": "Montreal-based supplier of first aid kits and safety supplies acquired by Acme United in 2020."
+      },
+      {
+        "name": "Med-Nap LLC",
+        "type": "company",
+        "description": "Florida-based manufacturer of antiseptic prep pad and towelette solutions acquired by Acme United in 2020."
+      },
+      {
+        "name": "First Aid Kits",
+        "type": "product",
+        "description": "Principal product sold across all segments, comprising essential safety items."
+      },
+      {
+        "name": "Spill Magic absorbent products",
+        "type": "product",
+        "description": "Absorbent products manufactured at the Smyrna, TN facility."
+      },
+      {
+        "name": "DMT sharpening tools",
+        "type": "product",
+        "description": "Sharpening tools produced at the Marlborough, MA facility."
+      },
+      {
+        "name": "Med-Nap alcohol and BZK wipes",
+        "type": "product",
+        "description": "Alcohol and BZK wipe products manufactured at the Brooksville, FL facility."
+      },
+      {
+        "name": "Amazon",
+        "type": "company",
+        "description": "Second largest customer for Acme United's eCommerce channel."
+      },
+      {
+        "name": "Asia (Hong Kong and China)",
+        "type": "segment",
+        "description": "Geographic segment where sourcing, production planning, quality control, and sales activities occur."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Acme United Corporation",
+        "target": "First Aid Central",
+        "type": "acquires",
+        "evidence": "The acquisition and successful integration of the business and assets of First Aid Central..."
+      },
+      {
+        "source": "Acme United Corporation",
+        "target": "Med-Nap LLC",
+        "type": "acquires",
+        "evidence": "The acquisition of the business and assets of Med-Nap LLC..."
+      },
+      {
+        "source": "Acme United Corporation",
+        "target": "Amazon",
+        "type": "supplies_to",
+        "evidence": "In 2020, sales in the eCommerce channel grew substantially and Amazon has become the Company\u2019s second largest customer."
+      },
+      {
+        "source": "Acme United Corporation",
+        "target": "Asia (Hong Kong and China)",
+        "type": "operates_in_segment",
+        "evidence": "The operations in Asia consist of sourcing, product development, production planning, quality control and sales activities."
+      }
+    ]
+  },
+  "AE_10-K_2020": {
+    "filing_id": "AE_10-K_2020",
+    "ticker": "AE",
+    "company_name": "ADAMS RESOURCES & ENERGY, INC.",
+    "entities": [
+      {
+        "name": "ADAMS RESOURCES & ENERGY, INC.",
+        "type": "company",
+        "description": "The parent company operating in the energy sector as described in the SEC 10-K filing."
+      },
+      {
+        "name": "qualified drivers",
+        "type": "person",
+        "description": "Individuals with necessary skills and certifications required to operate vehicles for ADAMS RESOURCES & ENERGY, INC.'s business operations."
+      },
+      {
+        "name": "U.S. jobs market",
+        "type": "product",
+        "description": "The broader employment landscape in the United States that influences driver availability for the trucking industry."
+      },
+      {
+        "name": "electronic logging",
+        "type": "product",
+        "description": "Regulatory technology used to track driving hours and ensure compliance with transportation regulations."
+      },
+      {
+        "name": "trade credit",
+        "type": "financial",
+        "description": "Credit extended by suppliers allowing ADAMS RESOURCES & ENERGY, INC. to purchase goods on account, crucial for liquidity."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "ADAMS RESOURCES & ENERGY, INC.",
+        "target": "qualified drivers",
+        "type": "faces_risk",
+        "evidence": "Difficulty in attracting and retaining drivers could negatively affect our operations and limit our growth."
+      },
+      {
+        "source": "ADAMS RESOURCES & ENERGY, INC.",
+        "target": "U.S. jobs market",
+        "type": "faces_risk",
+        "evidence": "Regulatory requirements, including electronic logging, and an improving U.S. jobs market, could continue to reduce the number of eligible drivers in our markets."
+      },
+      {
+        "source": "ADAMS RESOURCES & ENERGY, INC.",
+        "target": "electronic logging",
+        "type": "faces_risk",
+        "evidence": "Regulatory requirements, including electronic logging, and an improving U.S. jobs market, could continue to reduce the number of eligible drivers in our markets."
+      },
+      {
+        "source": "ADAMS RESOURCES & ENERGY, INC.",
+        "target": "trade credit",
+        "type": "faces_risk",
+        "evidence": "Our business is dependent on the ability to obtain trade and other credit."
+      }
+    ]
+  },
+  "RNGR_10-K_2020": {
+    "filing_id": "RNGR_10-K_2020",
+    "ticker": "RNGR",
+    "company_name": "Ranger Energy Services, Inc.",
+    "entities": [
+      {
+        "name": "Ranger Energy Services, Inc.",
+        "type": "company",
+        "description": "A provider of high-spec well service rigs, wireline completion services, and complementary services in the United States."
+      },
+      {
+        "name": "Ranger LLC",
+        "type": "company",
+        "description": "The holding company that owns all outstanding equity interests in Ranger Energy Services, LLC and Torrent Energy Services, LLC."
+      },
+      {
+        "name": "Ranger Energy Services, LLC",
+        "type": "company",
+        "description": "Subsidiary through which Ranger Energy Services, Inc. operates its assets."
+      },
+      {
+        "name": "Torrent Energy Services, LLC",
+        "type": "company",
+        "description": "Subsidiary of Ranger LLC that contributes to the operational portfolio of Ranger Energy Services, Inc."
+      },
+      {
+        "name": "High Specification Rigs",
+        "type": "segment",
+        "description": "Segment providing high-spec well service rigs and complementary equipment and services throughout a well's lifecycle."
+      },
+      {
+        "name": "Completion and Other Services",
+        "type": "segment",
+        "description": "Segment offering wireline completion services and ancillary services to enhance well production."
+      },
+      {
+        "name": "Processing Solutions",
+        "type": "segment",
+        "description": "Segment providing proprietary modular equipment for natural gas processing."
+      },
+      {
+        "name": "CSL",
+        "type": "person",
+        "description": "Entity holding a majority of the voting interests in the Legacy Owners as part of Ranger Energy Services, Inc.'s ownership structure."
+      },
+      {
+        "name": "Class A Common Stock",
+        "type": "product",
+        "description": "The equity instrument issued by Ranger Energy Services, Inc. during its Offering on August 16, 2017."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Ranger LLC",
+        "target": "Ranger Energy Services, LLC",
+        "type": "subsidiary_of",
+        "evidence": "Ranger LLC owns all of the outstanding equity interests in Ranger Energy Services, LLC."
+      },
+      {
+        "source": "Ranger LLC",
+        "target": "Torrent Energy Services, LLC",
+        "type": "subsidiary_of",
+        "evidence": "Ranger LLC owns all of the outstanding equity interests in Torrent Energy Services, LLC."
+      },
+      {
+        "source": "Ranger LLC",
+        "target": "Ranger Energy Services, LLC",
+        "type": "manages",
+        "evidence": "Ranger LLC is the sole managing member responsible for operational decisions relating to Ranger Services and Torrent Services\u2019 business."
+      }
+    ]
+  },
+  "IR_10-K_2020": {
+    "filing_id": "IR_10-K_2020",
+    "ticker": "IR",
+    "company_name": "Ingersoll Rand Inc.",
+    "entities": [
+      {
+        "name": "Ingersoll Rand Inc.",
+        "type": "company",
+        "description": "Global diversified provider of mission-critical flow creation products and industrial solutions."
+      },
+      {
+        "name": "Gardner Denver Holdings, Inc.",
+        "type": "company",
+        "description": "Former name of Ingersoll Rand Inc. prior to the merger with Ingersoll-Rand plc's Industrial business."
+      },
+      {
+        "name": "Ingersoll-Rand plc",
+        "type": "company",
+        "description": "Parent company whose Industrial business was acquired by Gardner Denver Holdings, Inc. in 2020."
+      },
+      {
+        "name": "Ingersoll Rand Industrial",
+        "type": "segment",
+        "description": "Industrial segment of Ingersoll-Rand plc that was merged into Gardner Denver Holdings, Inc. in February 2020."
+      },
+      {
+        "name": "Compressor products",
+        "type": "product",
+        "description": "Broad range of compressor products manufactured by Ingersoll Rand across multiple markets."
+      },
+      {
+        "name": "Pump products",
+        "type": "product",
+        "description": "Diverse portfolio of pump solutions provided by Ingersoll Rand to industrial customers."
+      },
+      {
+        "name": "Vacuum and blower products",
+        "type": "product",
+        "description": "Specialized vacuum and blower offerings integral to Ingersoll Rand's mission-critical product lineup."
+      },
+      {
+        "name": "North American upstream land-based energy market",
+        "type": "risk",
+        "description": "Key end-market for Ingersoll Rand with exposure to sector-specific risks."
+      },
+      {
+        "name": "Aftermarket parts, consumables and services",
+        "type": "financial",
+        "description": "Recurring revenue stream derived from post-sale support of Ingersoll Rand's installed product base."
+      },
+      {
+        "name": "February 29, 2020",
+        "type": "signal",
+        "description": "Date marking the completion of the merger between Gardner Denver Holdings, Inc. and Ingersoll-Rand plc's Industrial business."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Gardner Denver Holdings, Inc.",
+        "target": "Ingersoll Rand Industrial",
+        "type": "acquires",
+        "evidence": "On February 29, 2020, Gardner Denver Holdings, Inc. completed the acquisition of and merger with the Industrial business of Ingersoll-Rand plc."
+      },
+      {
+        "source": "Gardner Denver Holdings, Inc.",
+        "target": "Ingersoll Rand Inc.",
+        "type": "acquired_by",
+        "evidence": "The merger resulted in a name change from Gardner Denver Holdings, Inc. to Ingersoll Rand Inc."
+      }
+    ]
+  },
+  "WDDD_10-K_2020": {
+    "filing_id": "WDDD_10-K_2020",
+    "ticker": "WDDD",
+    "company_name": "WORLDS INC",
+    "entities": [
+      {
+        "name": "Worlds Inc.",
+        "type": "company",
+        "description": "The parent company that retains its patent portfolio and IP rights after transferring online technologies to MariMed Inc."
+      },
+      {
+        "name": "MariMed Inc.",
+        "type": "company",
+        "description": "The subsidiary that received Worlds' online and operational technologies following the transfer on May 16, 2011."
+      },
+      {
+        "name": "Worlds Ultimate Chat",
+        "type": "product",
+        "description": "One of the technology platforms transferred to MariMed Inc. as part of the asset transfer."
+      },
+      {
+        "name": "Aerosmith World",
+        "type": "product",
+        "description": "A virtual world among the assets transferred to MariMed Inc., featuring entertainment content."
+      },
+      {
+        "name": "DMC Worlds",
+        "type": "product",
+        "description": "Another virtual world included in the asset transfer to MariMed Inc."
+      },
+      {
+        "name": "Cinema Virtual",
+        "type": "product",
+        "description": "A digital inventory component transferred to MariMed Inc., involving 3D objects and animation sequences."
+      },
+      {
+        "name": "Pearson contracts and related revenue",
+        "type": "financial",
+        "description": "Revenue-generating contracts associated with the transferred URLs and technology platform."
+      },
+      {
+        "name": "URLs: Worlds.com, Cybersexworld.com, Hang.com, Worldsfunds.com",
+        "type": "product",
+        "description": "The domain names and web addresses that were part of the asset transfer to MariMed Inc."
+      },
+      {
+        "name": "Digital inventory of over 10,000 3D objects",
+        "type": "product",
+        "description": "A large collection of digital assets transferred to MariMed Inc. as part of the technology platform."
+      },
+      {
+        "name": "Avatar library",
+        "type": "product",
+        "description": "An extensive set of character models included in the asset transfer to MariMed Inc."
+      },
+      {
+        "name": "Texture maps and virtual world architectures",
+        "type": "product",
+        "description": "Visual assets and structural designs transferred to MariMed Inc. as part of the technology platform."
+      },
+      {
+        "name": "U.S. Patent No. 6,219,045",
+        "type": "product",
+        "description": "One of the nine patents retained by Worlds Inc., covering proprietary technology."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Worlds Inc.",
+        "target": "MariMed Inc.",
+        "type": "supplies_to",
+        "evidence": "The assets were transferred as of May 16, 2011 and included: ... MariMed Inc."
+      },
+      {
+        "source": "Worlds Inc.",
+        "target": "MariMed Inc.",
+        "type": "founded",
+        "evidence": "On March 31, 2011, it was announced that our board had determined it would be in the best interest of our shareholders to transfer all of our online and operational technologies to our subsidiary, Worlds Online Inc. (currently called MariMed Inc.)."
+      }
+    ]
+  },
+  "WHD_10-K_2020": {
+    "filing_id": "WHD_10-K_2020",
+    "ticker": "WHD",
+    "company_name": "Cactus, Inc.",
+    "entities": [
+      {
+        "name": "Cactus, Inc.",
+        "type": "company",
+        "description": "The holding company that owns equity interests in Cactus Wellhead, LLC and operates through service centers and manufacturing facilities."
+      },
+      {
+        "name": "Cactus Wellhead, LLC",
+        "type": "segment",
+        "description": "The primary operating subsidiary of Cactus, Inc., engaged in the design, manufacture, sale, and servicing of wellhead and pressure control equipment for oil and gas wells."
+      },
+      {
+        "name": "Scott Bender",
+        "type": "person",
+        "description": "Co-founder of Cactus Wellhead, LLC with extensive experience in wellhead manufacturing since the late 1970s."
+      },
+      {
+        "name": "Joel Bender",
+        "type": "person",
+        "description": "Co-founder of Cactus Wellhead, LLC and partner of Scott Bender in the wellhead business."
+      },
+      {
+        "name": "Steven Bender",
+        "type": "person",
+        "description": "Owner of a stake in Cactus WH Enterprises alongside other employees of Cactus, Inc."
+      },
+      {
+        "name": "Cadent Energy Partners II, L.P.",
+        "type": "company",
+        "description": "An affiliate of Cadent Energy Partners LLC and one of the largest holders of CW Units in Cactus Wellhead, LLC."
+      },
+      {
+        "name": "Cactus WH Enterprises, LLC",
+        "type": "company",
+        "description": "A Delaware limited liability company owned by Scott Bender, Joel Bender, Steven Bender, and certain employees of Cactus, Inc., holding significant CW Unit ownership."
+      },
+      {
+        "name": "Class A common stock",
+        "type": "financial",
+        "description": "The Class A common stock issued by Cactus, Inc. to holders of CW Units upon redemption, representing a one-for-one basis increase in membership interest in Cactus Wellhead, LLC."
+      },
+      {
+        "name": "Class B common stock",
+        "type": "financial",
+        "description": "The Class B common stock held by CW Unit Holders other than Cactus, Inc., entitling them to vote together with Class A common stock on corporate matters."
+      },
+      {
+        "name": "Wellhead and pressure control equipment",
+        "type": "product",
+        "description": "The core products manufactured and sold by Cactus Wellhead, LLC for use in the drilling, completion, and production phases of oil and gas wells."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Cactus, Inc.",
+        "target": "Cactus Wellhead, LLC",
+        "type": "subsidiary_of",
+        "evidence": "Cactus Inc. is a holding company whose only material asset is an equity interest in Cactus LLC."
+      },
+      {
+        "source": "Scott Bender",
+        "target": "Cactus Wellhead, LLC",
+        "type": "founded",
+        "evidence": "We began operating in August 2011 following the formation of Cactus LLC in part by Scott Bender and Joel Bender..."
+      },
+      {
+        "source": "Joel Bender",
+        "target": "Cactus Wellhead, LLC",
+        "type": "founded",
+        "evidence": "We began operating in August 2011 following the formation of Cactus LLC in part by Scott Bender and Joel Bender..."
+      }
+    ]
+  },
+  "NEP_10-K_2020": {
+    "filing_id": "NEP_10-K_2020",
+    "ticker": "NEP",
+    "company_name": "NEXTERA ENERGY PARTNERS, LP",
+    "entities": [
+      {
+        "name": "NEXTERA ENERGY PARTNERS, LP",
+        "type": "company",
+        "description": "A growth-oriented limited partnership focused on acquiring and managing contracted clean energy projects."
+      },
+      {
+        "name": "NEP OpCo",
+        "type": "company",
+        "description": "The operating company through which NEXTERA ENERGY PARTNERS, LP owns its portfolio of renewable generation and natural gas pipeline assets."
+      },
+      {
+        "name": "NEE",
+        "type": "company",
+        "description": "Parent entity that holds a controlling interest in NEXTERA ENERGY PARTNERS, LP via NEP common units."
+      },
+      {
+        "name": "NEE Equity",
+        "type": "company",
+        "description": "Entity holding approximately 57.2% of NEP OpCo's limited partnership interests and full control of its Class B partnership interests."
+      },
+      {
+        "name": "Desert Sunlight",
+        "type": "product",
+        "description": "A solar generation facility partially owned by NEXTERA ENERGY PARTNERS, LP via an equity method investment."
+      },
+      {
+        "name": "Rosmar",
+        "type": "product",
+        "description": "A solar generation facility partially owned by NEXTERA ENERGY PARTNERS, LP via an equity method investment."
+      },
+      {
+        "name": "Pine Brooke Holdings",
+        "type": "product",
+        "description": "A pipeline asset with a 40% indirect equity interest held by NEXTERA ENERGY PARTNERS, LP."
+      },
+      {
+        "name": "Silver State South",
+        "type": "product",
+        "description": "A solar generation facility with a controlling 50% indirect ownership interest held by NEXTERA ENERGY PARTNERS, LP."
+      },
+      {
+        "name": "Wilmot",
+        "type": "product",
+        "description": "A 100 MW solar generation facility and a 30 MW battery storage facility acquired by NEXTERA ENERGY PARTNERS, LP in December 2020."
+      },
+      {
+        "name": "Third party investors",
+        "type": "person",
+        "description": "Investors holding noncontrolling Class B interests in NEP subsidiaries that own clean energy projects."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "NEE",
+        "target": "NEXTERA ENERGY PARTNERS, LP",
+        "type": "subsidiary_of",
+        "evidence": "At December 31, 2020, NEE owns 1,402,483 NEP common units."
+      },
+      {
+        "source": "NEE Equity",
+        "target": "NEP OpCo",
+        "type": "manages",
+        "evidence": "NEE Equity owns approximately 57.2% of NEP OpCo's common units representing limited partnership interests and 100% of NEP OpCo's Class B partnership interests."
+      },
+      {
+        "source": "NEXTERA ENERGY PARTNERS, LP",
+        "target": "Wilmot",
+        "type": "acquires",
+        "evidence": "In December 2020, NEP acquired 100% of the ownership interests in Wilmot..."
+      },
+      {
+        "source": "NEXTERA ENERGY PARTNERS, LP",
+        "target": "Desert Sunlight",
+        "type": "operates_in_segment",
+        "evidence": "NEP has indirect approximately 50% equity method investments in Desert Sunlight..."
+      },
+      {
+        "source": "NEXTERA ENERGY PARTNERS, LP",
+        "target": "Rosmar",
+        "type": "operates_in_segment",
+        "evidence": "...and Rosmar, an indirect 40% equity method investment in Pine Brooke Holdings..."
+      },
+      {
+        "source": "NEXTERA ENERGY PARTNERS, LP",
+        "target": "Pine Brooke Holdings",
+        "type": "operates_in_segment",
+        "evidence": "an indirect 40% equity method investment in Pine Brooke Holdings..."
+      },
+      {
+        "source": "NEXTERA ENERGY PARTNERS, LP",
+        "target": "Silver State South",
+        "type": "operates_in_segment",
+        "evidence": "...and an indirect controlling 50% interest in Silver State South."
+      }
+    ]
+  },
+  "MATX_10-K_2020": {
+    "filing_id": "MATX_10-K_2020",
+    "ticker": "MATX",
+    "company_name": "Matson, Inc.",
+    "entities": [
+      {
+        "name": "Matson, Inc.",
+        "type": "company",
+        "description": "A holding company incorporated in Hawaii providing ocean transportation and logistics services."
+      },
+      {
+        "name": "Ocean Transportation segment",
+        "type": "segment",
+        "description": "Segment of Matson providing ocean transportation services to domestic non-contiguous economies and international routes."
+      },
+      {
+        "name": "Logistics segment",
+        "type": "segment",
+        "description": "Segment of Matson offering a variety of logistics services including multimodal transportation, freight forwarding, warehousing, and supply chain management."
+      },
+      {
+        "name": "Hawaii Service",
+        "type": "product",
+        "description": "Ocean carriage service between Long Beach, Oakland, Tacoma, Washington, and Honolulu, with inter-island barge network on Hawaii islands."
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Ocean Transportation segment",
+        "target": "Hawaii Service",
+        "type": "produces",
+        "evidence": "Our mission is to move freight better than anyone. Our vision is to create value for our shareholders by: Being our customers\u2019 first choice, Leveraging our core strengths to drive growth and increase profitability, Improving the communities in which we work and live, Being an environmental leader in our industry, and Being a great place to work."
+      }
+    ]
+  },
+  "FRTG_10-K_2020": {
+    "filing_id": "FRTG_10-K_2020",
+    "ticker": "FRTG",
+    "company_name": "FRONTERA GROUP INC.",
+    "entities": [
+      {
+        "name": "Frontera Group Inc.",
+        "type": "company",
+        "description": "The reporting company whose financial and operational details are outlined in the SEC 10-K filing."
+      },
+      {
+        "name": "Risk Factors",
+        "type": "risk",
+        "description": "A section detailing potential risks that could impact the company's future performance, as highlighted in the excerpt."
+      },
+      {
+        "name": "United States Generally Accepted Accounting Principles",
+        "type": "financial",
+        "description": "The accounting standards used to prepare the company's financial statements, mentioned in the filing."
+      }
+    ],
+    "relationships": []
+  }
+}
